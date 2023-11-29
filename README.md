@@ -83,7 +83,25 @@ https://huggingface.co/spaces/Racso777/Mushroom_Classification
 
 Predict.py can also be used to predict image. Weights can be found in the link above.
 
+## Limitations and Critical Analysis
+
+### Finished:
+
+Implemented a Vision Transformer model for classifying mushroom images, achieving a training accuracy of 98%. 
+
+The correct class is typically among the top three predictions. 
+
+Developed an interface using HuggingFace for uploading images and receiving prediction outcomes.
+
+### Problems:
+
+The model cannot predict exactly the class that mushroom belongs to.
+
+Only contains 370 classes of mushrooms, more classes will take longer to train and more resouces to collect and store.
+
 ## Future direction
+
+Finding more data with proper label
 
 Tranditional CNN model such as Resnet, Efficientnet, Alexnet.
 
