@@ -21,6 +21,8 @@ mushroom_uk_script.ipynb
 
 These two notebooks allow us to scrape the image link from mushroom world webcite and uk wild mushroom webcite.
 
+![图片_20231129013247](https://github.com/Racso777/Mushroom_Classification/assets/111296013/610ae20c-ef48-4064-b45b-1a173dd4280e)
+
 mushroom_images.csv
 
 mushroom_info.csv
@@ -40,6 +42,8 @@ data_aumentation.py
 
 This notebook will filp the image to create more data for the model to train on. This is done because there are very little images I can find online with proper label.
 
+![WeChat截图_20231129013323](https://github.com/Racso777/Mushroom_Classification/assets/111296013/ed82b4ef-6d05-47e4-b8b1-21a4a61c27c5)
+
 ### Vision Transformer model
 my_dataset.py
 
@@ -54,6 +58,10 @@ vit_model.py
 These python files contains vit models and their functions. If you have a image data folder with subfolders being each class like this, you can use train.py and set the input folder path to train the model. You will need to set the number of class.
 
 ## Results
+
+![WeChat截图_20231129014037](https://github.com/Racso777/Mushroom_Classification/assets/111296013/d1185443-2215-4ddd-a9d6-1c062e69a9ab)
+
+![WeChat截图_20231129013938](https://github.com/Racso777/Mushroom_Classification/assets/111296013/5d55ad69-8231-4656-acfe-cfc46544fbbc)
 
 
 ## Potential Impact:
