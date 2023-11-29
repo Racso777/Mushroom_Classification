@@ -7,8 +7,11 @@ Additionally, I aim to create a user-friendly platform where individuals can upl
 
 ## Data
 Mushroom world: 173 species with 10 images each
+
 https://www.mushroom.world/mushrooms/namelist
+
 Kaggle mushroom data: 215 species with 4 images each at least
+
 https://www.kaggle.com/datasets/daniilonishchenko/mushrooms-images-classification-215/data
 
 ## Web scrape data
@@ -23,7 +26,9 @@ download_image.ipynb
 
 ### Data Preprocessing
 data_augmentation.ipynb
+
 data_aumentation.py
+
 image_size_distribution.ipynb
 
 ### Vision Transformer model
