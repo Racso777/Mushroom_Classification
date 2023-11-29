@@ -46,7 +46,7 @@ data_augmentation.ipynb
 
 data_aumentation.py
 
-This notebook will filp the image to create more data for the model to train on. This is done because there are very little images I can find online with proper label.
+This notebook implements image flipping as a technique to augment the dataset for model training, addressing the issue of limited availability of appropriately labeled images found online.
 
 ![WeChat截图_20231129013323](https://github.com/Racso777/Mushroom_Classification/assets/111296013/ed82b4ef-6d05-47e4-b8b1-21a4a61c27c5)
 
@@ -61,13 +61,15 @@ utils.py
 
 vit_model.py
 
-These python files contains vit models and their functions. If you have a image data folder with subfolders being each class like this, you can use train.py and set the input folder path to train the model. You will need to set the number of class.
+The Python files provided include ViT (Vision Transformer) models and their associated functions. If your image data is organized into subfolders, each representing a class, you can utilize train.py to train the model. Simply set the input folder path in train.py and specify the number of classes.
 
 ![WeChat截图_20231129014823](https://github.com/Racso777/Mushroom_Classification/assets/111296013/6bfd97c0-efc6-4b89-b419-d0f711b45caa)
 
 Train.py will generate the excel file for accuracy and loss and the model weights will save as best_model.path, which will be used by predict.py to predict mushroom image.
 
 ## Results
+
+Vision Transformer with pretrained weight:
 
 ![WeChat截图_20231129014037](https://github.com/Racso777/Mushroom_Classification/assets/111296013/d1185443-2215-4ddd-a9d6-1c062e69a9ab)
 
@@ -79,23 +81,17 @@ Huggingface space:
 
 https://huggingface.co/spaces/Racso777/Mushroom_Classification
 
-Predict.py can also be used to predict image.
-
-## Limitations:
-
+Predict.py can also be used to predict image. Weights can be found in the link above.
 
 # Future direction
 
+Tranditional CNN model such as Resnet, Efficientnet, Alexnet.
 
 # More information on Mushroom
 
 
 # Reference
-Dao, T., Fu, D. Y., Ermon, S., Rudra, A., & Ré, C. (2022). FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. arXiv preprint arXiv:2205.14135.
+vit_model files:
 
-Gordić, A. (2022, July 18). ELI5: FlashAttention. Medium. https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad
-
-Hugging Face. (2023). Flash Attention. Hugging Face Documentation. https://huggingface.co/docs/text-generation-inference/conceptual/flash_attention
-
-Tri Dao. (2023, January 1). FlashAttention - Tri Dao | Stanford MLSys #67. YouTube. https://www.youtube.com/watch?v=gMOAud7hZg4
+https://blog.csdn.net/weixin_51331359/article/details/124514770?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170099603916777224412338%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170099603916777224412338&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-124514770-null-null.142^v96^control&utm_term=vision%20transformer%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB&spm=1018.2226.3001.4187
 
