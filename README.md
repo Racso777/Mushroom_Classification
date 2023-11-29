@@ -2,7 +2,9 @@
 
 # Introduction
 Identifying edible mushrooms can be challenging for many people upon encountering them. 
+
 My objective is to develop a machine learning model capable of classifying different types of fungi. 
+
 Additionally, I aim to create a user-friendly platform where individuals can upload photos of mushrooms to receive an assessment of their edibility.
 
 ## Data
@@ -13,6 +15,10 @@ https://www.mushroom.world/mushrooms/namelist
 Kaggle mushroom data: 215 species with 4 images each at least
 
 https://www.kaggle.com/datasets/daniilonishchenko/mushrooms-images-classification-215/data
+
+huggingface dataset
+
+https://huggingface.co/datasets/Racso777/Mushroom_Dataset
 
 ## Web scrape data
 mushroom_script.ipynb
@@ -57,6 +63,10 @@ vit_model.py
 
 These python files contains vit models and their functions. If you have a image data folder with subfolders being each class like this, you can use train.py and set the input folder path to train the model. You will need to set the number of class.
 
+![WeChat截图_20231129014823](https://github.com/Racso777/Mushroom_Classification/assets/111296013/6bfd97c0-efc6-4b89-b419-d0f711b45caa)
+
+Train.py will generate the excel file for accuracy and loss and the model weights will save as best_model.path, which will be used by predict.py to predict mushroom image.
+
 ## Results
 
 ![WeChat截图_20231129014037](https://github.com/Racso777/Mushroom_Classification/assets/111296013/d1185443-2215-4ddd-a9d6-1c062e69a9ab)
@@ -64,8 +74,12 @@ These python files contains vit models and their functions. If you have a image 
 ![WeChat截图_20231129013938](https://github.com/Racso777/Mushroom_Classification/assets/111296013/5d55ad69-8231-4656-acfe-cfc46544fbbc)
 
 
-## Potential Impact:
+## Code Demonstration:
+Huggingface space:
 
+https://huggingface.co/spaces/Racso777/Mushroom_Classification
+
+Predict.py can also be used to predict image.
 
 ## Limitations:
 
