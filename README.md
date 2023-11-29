@@ -1,11 +1,27 @@
 # Mushroom_Classification
 
-# Introduction
+## Introduction
 Identifying edible mushrooms can be challenging for many people upon encountering them. 
 
 My objective is to develop a machine learning model capable of classifying different types of fungi. 
 
 Additionally, I aim to create a user-friendly platform where individuals can upload photos of mushrooms to receive an assessment of their edibility.
+
+## Method
+
+### Vision Transformer
+
+![1_-DBSfgxHUuknIqmyDVKwCg](https://github.com/Racso777/Mushroom_Classification/assets/111296013/9919daa6-e35e-46ac-94af-1f86db247fe0)
+
+### Why VIT?
+
+Global Context Awareness: Unlike CNNs that primarily focus on local features due to their convolutional nature, Vision Transformers capture global dependencies in the image. Each transformer layer processes the entire image as a whole, enabling it to understand more complex, high-level relationships in the data.
+
+Scalability and Flexibility: Vision Transformers can easily scale with the amount of available data and computational resources. They tend to perform better as the dataset size increases, making them highly effective for large-scale applications.
+
+Transfer Learning and Generalization: ViTs demonstrate excellent transfer learning capabilities. A model trained on one large dataset can be fine-tuned on a smaller dataset for a different task, often outperforming models trained specifically for that task. This is partly due to their ability to generalize well from large-scale training.
+
+Efficient Parallelization: Transformers are more amenable to parallel processing compared to CNNs. Unlike the sequential nature of RNNs or the local processing of CNNs, the self-attention mechanism in transformers can process all parts of the input simultaneously, leading to efficiency gains during training.
 
 ## Data
 Mushroom world: 173 species with 10 images each
