@@ -122,10 +122,16 @@ Predict.py can also be used to predict image. Weights can be found in the link a
 - Tranditional CNN model such as Resnet, Efficientnet, Alexnet.
 
 ## More information on Mushroom
+mushroom world: https://www.mushroom.world/home/index
 
+wild uk mushroom: https://www.wildfooduk.com/mushroom-guide/
+
+ultimate mushroom guide:https://ultimate-mushroom.com/
 
 ## Reference
-vit_model files:
-
-https://blog.csdn.net/weixin_51331359/article/details/124514770?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170099603916777224412338%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170099603916777224412338&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-124514770-null-null.142^v96^control&utm_term=vision%20transformer%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB&spm=1018.2226.3001.4187
+- Leonard2021. (2022, May 3). Vision Transformer实现图像分类+可视化+训练数据保存. CSDN. Retrieved from https://blog.csdn.net/weixin_51331359/article/details/124514770
+- Raw, N. (2022, February 11). Fine-Tune ViT for Image Classification with Transformers. Hugging Face. Retrieved from https://huggingface.co/blog/fine-tune-vit.
+- Han, K., Xiao, A., Wu, E., Guo, J., Xu, C., & Wang, Y. (2022). Recent Advances in Vision Transformer: A Survey and Outlook of Recent Work. arXiv preprint arXiv:2203.01536. Retrieved from https://arxiv.org/abs/2203.01536​​​​.
+- Khan, S., Naseer, M., Hayat, M., Zamir, S. W., Khan, F. S., & Shah, M. (2021). Transformers in Vision: A Survey. arXiv preprint arXiv:2101.01169. Retrieved from https://arxiv.org/abs/2101.01169​​​​.
+- Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J. M., & Luo, P. (2021). A survey on efficient vision transformers: algorithms, techniques, and performance benchmarking. arXiv preprint arXiv:2309.02031. Retrieved from https://arxiv.org/abs/2309.02031​​​​.
 
