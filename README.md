@@ -41,7 +41,7 @@ download_image.ipynb
 
 This notebook allows us to download the image from image path in the csv file to local folder.
 
-### Data Preprocessing
+## Data Preprocessing
 data_augmentation.ipynb
 
 data_aumentation.py
@@ -50,7 +50,7 @@ This notebook implements image flipping as a technique to augment the dataset fo
 
 ![WeChat截图_20231129013323](https://github.com/Racso777/Mushroom_Classification/assets/111296013/ed82b4ef-6d05-47e4-b8b1-21a4a61c27c5)
 
-### Vision Transformer model
+## Vision Transformer model
 my_dataset.py
 
 predict.py
@@ -83,14 +83,14 @@ https://huggingface.co/spaces/Racso777/Mushroom_Classification
 
 Predict.py can also be used to predict image. Weights can be found in the link above.
 
-# Future direction
+## Future direction
 
 Tranditional CNN model such as Resnet, Efficientnet, Alexnet.
 
-# More information on Mushroom
+## More information on Mushroom
 
 
-# Reference
+## Reference
 vit_model files:
 
 https://blog.csdn.net/weixin_51331359/article/details/124514770?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170099603916777224412338%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170099603916777224412338&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-124514770-null-null.142^v96^control&utm_term=vision%20transformer%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB&spm=1018.2226.3001.4187
