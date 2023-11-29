@@ -15,67 +15,67 @@
 
 ### Why VIT?
 
-Global Context Awareness: Unlike CNNs that primarily focus on local features due to their convolutional nature, Vision Transformers capture global dependencies in the image. Each transformer layer processes the entire image as a whole, enabling it to understand more complex, high-level relationships in the data.
+- Global Context Awareness: Unlike CNNs that primarily focus on local features due to their convolutional nature, Vision Transformers capture global dependencies in the image. Each transformer layer processes the entire image as a whole, enabling it to understand more complex, high-level relationships in the data.
 
-Scalability and Flexibility: Vision Transformers can easily scale with the amount of available data and computational resources. They tend to perform better as the dataset size increases, making them highly effective for large-scale applications.
+- Scalability and Flexibility: Vision Transformers can easily scale with the amount of available data and computational resources. They tend to perform better as the dataset size increases, making them highly effective for large-scale applications.
 
-Transfer Learning and Generalization: ViTs demonstrate excellent transfer learning capabilities. A model trained on one large dataset can be fine-tuned on a smaller dataset for a different task, often outperforming models trained specifically for that task. This is partly due to their ability to generalize well from large-scale training.
+- Transfer Learning and Generalization: ViTs demonstrate excellent transfer learning capabilities. A model trained on one large dataset can be fine-tuned on a smaller dataset for a different task, often outperforming models trained specifically for that task. This is partly due to their ability to generalize well from large-scale training.
 
-Efficient Parallelization: Transformers are more amenable to parallel processing compared to CNNs. Unlike the sequential nature of RNNs or the local processing of CNNs, the self-attention mechanism in transformers can process all parts of the input simultaneously, leading to efficiency gains during training.
+-  Efficient Parallelization: Transformers are more amenable to parallel processing compared to CNNs. Unlike the sequential nature of RNNs or the local processing of CNNs, the self-attention mechanism in transformers can process all parts of the input simultaneously, leading to efficiency gains during training.
 
 ## Data
-Mushroom world: 173 species with 10 images each
+- Mushroom world: 173 species with 10 images each
 
 https://www.mushroom.world/mushrooms/namelist
 
-Kaggle mushroom data: 215 species with 4 images each at least
+- Kaggle mushroom data: 215 species with 4 images each at least
 
 https://www.kaggle.com/datasets/daniilonishchenko/mushrooms-images-classification-215/data
 
-huggingface dataset
+- huggingface dataset
 
 https://huggingface.co/datasets/Racso777/Mushroom_Dataset
 
 ## Web scrape data
-mushroom_script.ipynb
+- mushroom_script.ipynb
 
-mushroom_uk_script.ipynb
+- mushroom_uk_script.ipynb
 
 These two notebooks allow us to scrape the image link from mushroom world webcite and uk wild mushroom webcite.
 
 ![图片_20231129013247](https://github.com/Racso777/Mushroom_Classification/assets/111296013/610ae20c-ef48-4064-b45b-1a173dd4280e)
 
-mushroom_images.csv
+- mushroom_images.csv
 
-mushroom_info.csv
+- mushroom_info.csv
 
-mushroom_uk_images.csv
+- mushroom_uk_images.csv
 
 Image csv file contains the image link and the name of the mushroom in the image. Info csv contains some information related to the mushroom, scraped from the mushroom world webcite.
 
-download_image.ipynb
+- download_image.ipynb
 
 This notebook allows us to download the image from image path in the csv file to local folder.
 
 ## Data Preprocessing
-data_augmentation.ipynb
+- data_augmentation.ipynb
 
-data_aumentation.py
+- data_aumentation.py
 
 This notebook implements image flipping as a technique to augment the dataset for model training, addressing the issue of limited availability of appropriately labeled images found online.
 
 ![WeChat截图_20231129013323](https://github.com/Racso777/Mushroom_Classification/assets/111296013/ed82b4ef-6d05-47e4-b8b1-21a4a61c27c5)
 
 ## Vision Transformer model
-my_dataset.py
+- my_dataset.py
 
-predict.py
+- predict.py
 
-train.py
+- train.py
 
-utils.py
+- utils.py
 
-vit_model.py
+- vit_model.py
 
 The Python files provided include ViT (Vision Transformer) models and their associated functions. If your image data is organized into subfolders, each representing a class, you can utilize train.py to train the model. Simply set the input folder path in train.py and specify the number of classes.
 
@@ -103,23 +103,23 @@ Predict.py can also be used to predict image. Weights can be found in the link a
 
 ### Finished:
 
-Implemented a Vision Transformer model for classifying mushroom images, achieving a training accuracy of 98%. 
+- Implemented a Vision Transformer model for classifying mushroom images, achieving a training accuracy of 98%. 
 
-The correct class is typically among the top three predictions. 
+- The correct class is typically among the top three predictions. 
 
-Developed an interface using HuggingFace for uploading images and receiving prediction outcomes.
+- Developed an interface using HuggingFace for uploading images and receiving prediction outcomes.
 
 ### Problems:
 
-The model cannot predict exactly the class that mushroom belongs to.
+- The model cannot predict exactly the class that mushroom belongs to.
 
-Only contains 370 classes of mushrooms, more classes will take longer to train and more resouces to collect and store.
+- Only contains 370 classes of mushrooms, more classes will take longer to train and more resouces to collect and store.
 
 ## Future direction
 
-Finding more data with proper label
+- Finding more data with proper label
 
-Tranditional CNN model such as Resnet, Efficientnet, Alexnet.
+- Tranditional CNN model such as Resnet, Efficientnet, Alexnet.
 
 ## More information on Mushroom
 
