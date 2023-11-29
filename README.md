@@ -42,7 +42,8 @@ vit_model.py
 ## Results
 
 
-## Discussion Question: FlashAttention appears to be a versatile and valuable tool, especially when implemented on GPU-supported models, which encompasses a majority of current models. What potential drawbacks might be associated with this model?
+## Potential Impact:
+
 
 ## Limitations:
 CUDA Compilation: We need a new CUDA kernel for each variant of attention, requiring low-level programming and extensive engineering, which may not be consistent across GPU architectures. A high-level language for writing attention algorithms, translatable to IO-aware CUDA implementations, is needed.
@@ -51,12 +52,8 @@ Multi-GPU IO-Aware Methods: While our attention implementation is nearly optimal
 
 Sparsity: In utilizing block-sparse FlashAttention for longer sequences, the sparsity increases, leading to more blocks and information being excluded in the training process as a compromise for enhanced performance. Although this method results in increased speed, the trade-offs resulting from the masked blocks remain uncertain. The authors have not explored or discussed the potential impacts of excluding blocks in this technique.
 
-# Code Demonstration
-If we want to train a model using this approach, we could clone the repo and run the python file: https://github.com/Dao-AILab/flash-attention/tree/main/training/run.py
+# Future direction
 
-The test dataset that we could use and train is in this file: https://github.com/Dao-AILab/flash-attention/blob/main/training/tests/datamodules/test_language_modeling_hf.py
-
-Please refer to https://github.com/Dao-AILab/flash-attention/tree/main for the official demonstration and the source code of FlashAttention.
 
 # More information on FlashAttention
 Flashier Attention blog: https://www.adept.ai/blog/flashier-attention 
