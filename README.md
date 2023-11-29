@@ -16,28 +16,42 @@ https://www.kaggle.com/datasets/daniilonishchenko/mushrooms-images-classificatio
 
 ## Web scrape data
 mushroom_script.ipynb
+
 mushroom_uk_script.ipynb
 
+These two notebooks allow us to scrape the image link from mushroom world webcite and uk wild mushroom webcite.
+
 mushroom_images.csv
+
 mushroom_info.csv
+
 mushroom_uk_images.csv
 
+Image csv file contains the image link and the name of the mushroom in the image. Info csv contains some information related to the mushroom, scraped from the mushroom world webcite.
+
 download_image.ipynb
+
+This notebook allows us to download the image from image path in the csv file to local folder.
 
 ### Data Preprocessing
 data_augmentation.ipynb
 
 data_aumentation.py
 
-image_size_distribution.ipynb
+This notebook will filp the image to create more data for the model to train on. This is done because there are very little images I can find online with proper label.
 
 ### Vision Transformer model
-class_indices.json
 my_dataset.py
+
 predict.py
+
 train.py
+
 utils.py
+
 vit_model.py
+
+These python files contains vit models and their functions. If you have a image data folder with subfolders being each class like this, you can use train.py and set the input folder path to train the model. You will need to set the number of class.
 
 ## Results
 
@@ -46,25 +60,13 @@ vit_model.py
 
 
 ## Limitations:
-CUDA Compilation: We need a new CUDA kernel for each variant of attention, requiring low-level programming and extensive engineering, which may not be consistent across GPU architectures. A high-level language for writing attention algorithms, translatable to IO-aware CUDA implementations, is needed.
 
-Multi-GPU IO-Aware Methods: While our attention implementation is nearly optimal for single-GPU use, extending and optimizing it for multi-GPU environments, including accounting for inter-GPU data transfers, represents an exciting area for future research.
-
-Sparsity: In utilizing block-sparse FlashAttention for longer sequences, the sparsity increases, leading to more blocks and information being excluded in the training process as a compromise for enhanced performance. Although this method results in increased speed, the trade-offs resulting from the masked blocks remain uncertain. The authors have not explored or discussed the potential impacts of excluding blocks in this technique.
 
 # Future direction
 
 
-# More information on FlashAttention
-Flashier Attention blog: https://www.adept.ai/blog/flashier-attention 
+# More information on Mushroom
 
-Tri Dao’s talk: https: //www.youtube.com/watch?v=gMOAud7hZg4
-
-Tri Dao’s talk: https: //www.youtube.com/watch?v=FThvfkXWqtE
-
-ELI5: FlashAttention: https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad
-
-Huggingface: https://huggingface.co/docs/text-generation-inference/conceptual/flash_attention
 
 # Reference
 Dao, T., Fu, D. Y., Ermon, S., Rudra, A., & Ré, C. (2022). FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. arXiv preprint arXiv:2205.14135.
