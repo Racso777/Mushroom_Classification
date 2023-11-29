@@ -1,11 +1,11 @@
 # Mushroom_Classification
 
 ## Introduction
-Identifying edible mushrooms can be challenging for many people upon encountering them. 
+-Identifying edible mushrooms can be challenging for many people upon encountering them. 
 
-My objective is to develop a machine learning model capable of classifying different types of fungi. 
+-My objective is to develop a machine learning model capable of classifying different types of fungi. 
 
-Additionally, I aim to create a user-friendly platform where individuals can upload photos of mushrooms to receive an assessment of their edibility.
+-Additionally, I aim to create a user-friendly platform where individuals can upload photos of mushrooms to receive an assessment of their edibility.
 
 ## Method
 
